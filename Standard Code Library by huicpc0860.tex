@@ -1,0 +1,62 @@
+\documentclass[12pt,sopenright,a3paper]{book}
+\usepackage[left=2in,top=1.5in,right=2in,bottom=1.5in]{geometry}
+\usepackage[noindent]{ctex}
+\usepackage{listings}
+\usepackage{fontspec}
+\setromanfont{Comic Sans MS}
+\lstset{numbers=left,language=c++,breaklines,extendedchars=false}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+	\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter.\ #1}}{}}
+	\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{\thesection.\ #1}}}
+	\renewcommand{\headrulewidth}{1.0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\newcommand{\helv}{\fontfamily{phv}\fontseries{b}\fontsize{9}{11}\selectfont}
+	\fancyhf{}
+	\fancyfoot[LE,RO]{\thepage}
+	\fancyhead[LE,RO]{\rightmark}
+	\linespread{1}
+\title{Standard Code Library}
+\author{huicpc0860}
+%\date{}
+\begin{document}
+	\thispagestyle{empty}
+	\maketitle
+	\newpage
+
+	\thispagestyle{empty}
+	\tableofcontents
+	\newpage
+	\thispagestyle{fancy}
+
+	\mainmatter
+	\chapter{Data Structures}
+		\newpage
+		\input{Manacher.cpp}
+		\input{hash.cpp}
+		\input{AC_automation.cpp}
+		\input{suffix.cpp}
+		\input{DLX.cpp}
+		\input{Splay.cpp}
+		\input{search.cpp}
+		\input{segment_tree.cpp}
+		\input{BIT.cpp}
+		\input{UFS.cpp}
+		\input{za1.cpp}
+	\chapter{Computation Geometry}
+		\newpage
+		\input{cube_cut.cpp}
+		\input{discretization.cpp}
+		\input{Incremental.cpp}
+		\input{scanning.cpp}
+		\input{simulated_annealing.cpp}
+		\input{Simpson.cpp}
+		\input{float.cpp}
+		\input{point.cpp}
+		\input{poly.cpp}
+		\input{circle.cpp}
+		\input{jihe2D.cpp}
+		\input{jihe3D.cpp}
+		\input{za2.cpp}
+		\input{dp.cpp}
+\end{document}
